@@ -1,22 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Clipboard landing page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Clipboard landing page</title>
 
-  A history of everything you copy
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="sass/style.scss" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <img src="images/logo.svg" alt="Clipboard Logo" class="header__logo" />
+    </header>
+
+    <section class="hero">
+      <h1 class="heading-primary">A history of everything you copy</h1>
+      <p class="hero__text">
+        Clipboard allow you to track and organize everything you copy. Instantly
+        access your clipboard on all your devices.
+      </p>
+      <section class="hero__buttons">
+        <button class="btn btn--primary">Download for iOS</button>
+        <button class="btn btn--secondary">Download for Mac</button>
+      </section>
+    </section>
+
+    <section class="features">
+      <header class="sections-header">
+        <h2 class="sections-header__heading">Keep track your snippets</h2>
+        <p class="sections-header__text">
+          Clipboard instantly stores any item you copy in the cloud, meaning you
+          can access your snippets immediately on all your devices. Our Mac and
+          iOS apps will help you organize everything.
+        </p>
+      </header>
+      <section class="features__box">
+        <img
+          class="features__img"
+          src="images/image-computer.png"
+          alt="Computer screen displaying succeed operation"
+        />
+        <ul class="features__list">
+          <li>
+            <h3 class="features__heading">Quick Search</h3>
+            <p class="features__detail">
+              Easily searc your snippets by content, category, web address,
+              application, and more.
+            </p>
+          </li>
+          <li>
+            <h3 class="features__heading">iCloud Sync</h3>
+            <p class="features__detail">
+              Instanly saves and syncs sinppets across all your devices.
+            </p>
+          </li>
+          <li>
+            <h3 class="features__heading">Complete History</h3>
+            <p class="features__detail">
+              Retieve any snippets from the first moment you started using the
+              app.
+            </p>
+          </li>
+        </ul>
+      </section>
+    </section>
+    <!-- prettier-ignore -->
+    A history of everything you copy
 
   Clipboard allows you to track and organize everything you 
   copy. Instantly access your clipboard on all your devices.
@@ -76,12 +151,14 @@
   Privacy Policy
   Press Kit
   Install Guide
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer>
+  </body>
 </html>
