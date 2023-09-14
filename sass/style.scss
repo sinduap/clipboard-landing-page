@@ -3,6 +3,7 @@
   --color-secondary: hsl(233, 100%, 69%);
   --neutral-dark: hsl(210, 10%, 33%);
   --neutral-light: hsl(201, 11%, 66%);
+  --bg-grey: hsl(0, 0%, 95%);
   --white: hsl(0, 0%, 80%);
 }
 
@@ -136,6 +137,54 @@ button {
     align-self: center;
     margin-bottom: 4rem;
   }
+}
+
+.company {
+  display: flex;
+  gap: 12rem;
+  align-items: center;
+  width: fit-content;
+  margin: 0 auto 14.8rem;
+}
+
+.section-cta {
+  text-align: center;
+  margin-bottom: 14.8rem;
+}
+
+.footer {
+  display: flex;
+  color: var(--neutral-dark);
+  gap: 10.4rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5.2rem;
+
+  &__logo {
+    width: 5.2rem;
+  }
+
+  &__info {
+    width: 60%;
+    display: flex;
+    gap: 10.4rem;
+  }
+
+  &__row {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+  }
+
+  &__socials {
+    display: flex;
+    gap: 2.4rem;
+  }
+}
+
+footer {
+  background-color: var(--bg-grey);
+  padding: 5.2rem 0 2.4rem;
 }
 
 .btn {
