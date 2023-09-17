@@ -140,11 +140,15 @@ button {
 }
 
 .company {
-  display: flex;
-  gap: 12rem;
-  align-items: center;
-  width: fit-content;
   margin: 0 auto 14.8rem;
+
+  &__box {
+    display: flex;
+    gap: 12rem;
+    align-items: center;
+    width: fit-content;
+    margin: 0 auto;
+  }
 }
 
 .section-cta {
@@ -159,6 +163,27 @@ button {
   align-items: center;
   justify-content: center;
   margin-bottom: 5.2rem;
+
+  &__link {
+    &:link {
+      color: currentColor;
+      text-decoration: none;
+      transition: all 0.3s ease-in;
+    }
+
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+
+  &__socials-link {
+    transition: all 0.3s ease-in;
+
+    &:hover {
+      filter: invert(62%) sepia(50%) saturate(590%) hue-rotate(122deg)
+        brightness(89%) contrast(89%);
+    }
+  }
 
   &__logo {
     width: 5.2rem;
@@ -192,6 +217,11 @@ footer {
   padding: 1.4rem 3.6rem;
   border: none;
   border-radius: 100px;
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    filter: brightness(1.1);
+  }
 
   &--primary {
     color: #fff;
@@ -209,4 +239,106 @@ footer {
   color: var(--neutral-dark);
   font-size: 5.2rem;
   font-weight: 600;
+}
+
+@media (max-width: 1220px) {
+  .container {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .company__box {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .features__box {
+    grid-template-columns: 1fr;
+    gap: 6.2rem;
+    justify-items: center;
+  }
+
+  .features__img {
+    margin-left: 0;
+    width: 60%;
+    height: auto;
+  }
+
+  .features__list {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .features-secondary__img {
+    width: 60%;
+    height: auto;
+  }
+
+  .footer {
+    &__info {
+      gap: 2rem;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 50%;
+  }
+
+  .footer {
+    gap: 4.4rem;
+  }
+}
+
+@media (max-width: 525px) {
+  .container {
+    max-width: 80%;
+  }
+
+  .hero__buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 2.4rem;
+  }
+
+  .btn {
+    display: block;
+    width: 100%;
+  }
+
+  .features__img,
+  .features-secondary__img {
+    width: 100%;
+  }
+
+  .features-card__box {
+    flex-direction: column;
+    align-items: center;
+    gap: 4.4rem;
+  }
+
+  .company__box {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    gap: 7.4rem;
+
+    & img {
+      height: 4.4rem;
+    }
+  }
+
+  .footer {
+    flex-direction: column;
+
+    &__info {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__row {
+      align-items: center;
+    }
+  }
 }
